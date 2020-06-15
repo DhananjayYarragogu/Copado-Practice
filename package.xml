@@ -3,12 +3,13 @@
     <types>
         <members>Account.Has_Support_Plan__c</members>
         <members>Account.Support_Plan_Expiration_Date__c</members>
+        <members>Opportunity.Close_Reason__c</members>
         <name>CustomField</name>
     </types>
     <types>
-        <members>Sales User</members>
-        <members>Support User</members>
-        <name>Profile</name>
+        <members>Account.Support_plan_expiration_date_required</members>
+        <members>Opportunity.Close_reason_required_when_lost</members>
+        <name>ValidationRule</name>
     </types>
     <version>48.0</version>
 </Package>
