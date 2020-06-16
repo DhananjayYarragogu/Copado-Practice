@@ -20,4 +20,12 @@
         <trackFeedHistory>false</trackFeedHistory>
         <type>Date</type>
     </fields>
+    <validationRules>
+        <fullName>Support_plan_expiration_date_required</fullName>
+        <active>true</active>
+        <description>Support plan expiration date is required when account is marked as having support plan.</description>
+        <errorConditionFormula>Has_Support_Plan__c = True &amp;&amp; ISBLANK(Support_Plan_Expiration_Date__c)</errorConditionFormula>
+        <errorDisplayField>Support_Plan_Expiration_Date__c</errorDisplayField>
+        <errorMessage>You must enter an expiration date when an account has a support plan.</errorMessage>
+    </validationRules>
 </CustomObject>
